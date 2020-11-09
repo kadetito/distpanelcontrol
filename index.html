@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jobs Bolsa de trabajo</title>
+    <base href="./" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="cordova.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/d1fa0d334c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/mklhjrnfcgz2tpvuzlqsz1xjtdi6s2yx92b1row5igthwoe0/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.3835d9fd58449e8fa2fa.css" />
+</head>
+
+<body>
+    <app-root></app-root>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            (function($) {
+                "use strict";
+
+                var fullHeight = function() {
+                    $(".js-fullheight").css("height", $(window).height());
+                    $(window).resize(function() {
+                        $(".js-fullheight").css("height", $(window).height());
+                    });
+                };
+                fullHeight();
+
+                $("#sidebarCollapse").on("click", function() {
+                    $("#sidebar").toggleClass("active");
+                });
+            })(jQuery);
+
+            $(".global").on("click", function() {
+                $("#sidebar").removeClass("active");
+            });
+            $(".botoncerrar").on("click", function() {
+                $("#sidebar").removeClass("active");
+            });
+        });
+    </script>
+    <script src="runtime.acf0dec4155e77772545.js" defer></script>
+    <script src="polyfills.5c8033dfb7c3b4aa1601.js" defer></script>
+    <script src="main.c3d655610fa99533d83a.js" defer></script>
+</body>
+
+</html>
